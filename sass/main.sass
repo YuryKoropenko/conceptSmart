@@ -1,0 +1,165 @@
+@import "bourbon/bourbon"
+@import "sass/_vars"
+@import "sass/_custom"
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.25
+	font-family: "Exo2Regular", sans-serif
+	overflow-x: hidden
+
+.hidden
+	display: none
+
+.header
+	&-top
+		height: 50px
+		background-color: #202e31
+	&-center
+		background-color: #ffc13c
+		&__wrapper
+			@extend .clearfix
+			width: 100%
+		&__logo
+			+percent(309, 1000)
+			padding-left: 9px
+			padding-top: 30px
+			padding-bottom: 26px
+			float: left
+		&__search
+			+percent(421, 1000)
+			float: left
+			padding-top: 35px
+			padding-bottom: 62px
+		&__authentication
+			+percent(164, 1000)
+			float: left
+			padding-top: 35px
+			padding-bottom: 62px
+		&__basket
+			+percent(79px, 1000)
+			padding-right: 30px
+			padding-top: 27px
+			padding-bottom: 57px
+			float: right
+.nav
+	padding-left: 9px
+	@extend .clearfix
+	&__item
+		float: left
+		display: block
+	&__link
+		padding: 0 10px
+		line-height: 50px
+		font-size: em(12px)
+		display: block
+		&-active, &:hover
+			background-color: #ffc13c
+			color: #202e31
+			position: relative
+			&::after
+				content: ''
+				@include triangle(8px 11px, #202e31 #ffc13c, up-right)
+				position: absolute
+				top: 0
+				right: 0
+.phone
+	text-align: right
+	padding-right: 11px
+	&__number
+		color: #fff
+		font-size: em(24px)
+		display: block
+		line-height: 100%
+		text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.82)
+	&__communication
+		color: #ffc13c
+		font-size: em(12px)
+		line-height: 100%
+		border-bottom: 1px solid #ffc13c
+		&:hover
+			color: #fff
+			border-color: #fff
+.logo
+	display: inline-block
+	width: 256px
+	height: 73px
+.search
+	max-width: 386px
+	&__wrapper
+		background-color: #252e31
+		display: block
+		color: #fff
+		font-size: em(14px)
+		height: 36px
+		line-height: 36px
+		padding-left: 12px
+		position: relative
+		&::after
+			content: ''
+			@include triangle(8px 11px, #ffc13c #202e31, up-right)
+			position: absolute
+			right: 0
+			top: 0
+	&__input
+		position: absolute
+		width: 288px
+		height: 30px
+		top: 50%
+		margin-top: -15px
+		left: 63px
+		color: #000
+		padding: 0 5px
+	&__button
+		width: 12px
+		height: 14px
+		display: block
+		position: absolute
+		top: 50%
+		right: 12px
+		margin-top: -7px
+		background-image: url(../img/smart-o/arrow.png)
+		background-repeat: no-repeat
+		background-position: center
+.authentication
+	text-align: center
+	border: 2px solid #202e31
+	padding: 4px 0
+	width: 164px
+	&__link
+		font-family: "PTSansNarrowRegular", sans-serif
+		display: inline-block
+		text-transform: uppercase
+		font-size: em(10px)
+		line-height: 1.1
+		color: #202e31
+		letter-spacing: 0.5px
+		transform: scaleY(1.4)
+		-webkit-transform: scaleY(1.4)
+		-ms-transform: scaleY(1.4)
+		text-decoration: underline
+.basket
+	display: block
+	width: 49px
+	height: 49px
+	border-radius: 50%
+	border: 2px solid #202e31
+	background-image: url(../img/smart-o/basket.png)
+	background-repeat: no-repeat
+	background-position: center
+	position: relative
+	&__quantity
+		position: absolute
+		right: -16px
+		top: -4px
+		color: #fff
+		font-size: em(12px)
+		background-color: #202e31
+		height: 14px
+		line-height: 14px
+		width: 33px
+		display: block
+		border-radius: 7px
+		text-align: center
