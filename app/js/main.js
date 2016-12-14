@@ -17,4 +17,11 @@ $(document).ready(function() {
 		$(this).parent().children(".nav").stop(true, false).fadeToggle(300);
 		return false
 	});
+/*select*/
+	$('select').each(function(){
+	$(this).siblings('p').text( $(this).children('option:selected').text() );
+	});
+	$('select').change(function(){
+	$(this).siblings('p').text( $(this).children('option:selected').text() );
+	});
 });

@@ -469,3 +469,135 @@ body
 		background: -ms-linear-gradient(top, rgba(157,207,116,1) 0%, rgba(100,147,58,1) 100%)
 		background: linear-gradient(to bottom, rgba(157,207,116,1) 0%, rgba(100,147,58,1) 100%)
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9dcf74', endColorstr='#64933a', GradientType=0 )
+/**/
+.checkout-top
+	background-color: #fff
+	display: inline-block
+	@extend .clearfix
+	&__wrapper
+		margin-top: 27px
+		background-color: #ffc13c
+		height: 25px
+	&__item
+		display: block
+		float: left
+		margin-left: 16px
+		position: relative
+		height: 25px
+		padding-top: 10px
+		&::before
+			content: '/'
+			position: absolute
+			left: -12px
+			bottom: -1px
+		&:first-child
+			margin-left: 0
+			&::before
+				display: none
+		&:last-child
+			padding-top: 0
+			.checkout-top__link
+				display: block
+				padding-right: 16px
+				text-transform: uppercase
+				font-family: "Exo2Bold", sans-serif
+				font-size: em(22px)
+				transform: scaleY(1)
+				-webkit-transform: scaleY(1)
+				-ms-transform: scaleY(1)
+				vertical-align: bottom
+	&__link
+		color: #202e31
+		font-family: "PTSansNarrowRegular", sans-serif
+		display: block
+		transform: scaleY(1.2)
+		-webkit-transform: scaleY(1.2)
+		-ms-transform: scaleY(1.2)
+		font-size: em(12px)
+.checkout-b
+	padding-top: 29px
+	&__left
+		padding-right: 19px
+	&__top
+		width: 100%
+		background-color: #dedede
+		height: 40px
+		line-height: 40px
+		float: left
+		@extend .clearfix
+		&-f
+			display: block
+			float: left
+			margin-left: 26px
+			font-family: "PTSansNarrowRegular", sans-serif
+			color: #191919
+			font-size: 12px
+			transform: scaleY(1.2)
+			-webkit-transform: scaleY(1.2)
+			-ms-transform: scaleY(1.2)
+		&-r
+			display: block
+			float: right
+			margin-right: 104px
+			font-family: "PTSansNarrowRegular", sans-serif
+			color: #191919
+			font-size: 12px
+			transform: scaleY(1.2)
+			-webkit-transform: scaleY(1.2)
+			-ms-transform: scaleY(1.2)
+	&__wrapper
+		@extend .clearfix
+	&__first
+		+percent(482, 701)
+		float: left
+	&__last
+		+percent(184, 701)
+		float: right
+	&__row
+		@extend .clearfix
+		padding-top: 14px
+	&__label
+		width: 155px
+		+percent(158, 482)
+		display: block
+		text-align: right
+		float: left
+		font-family: "PTSansNarrowRegular", sans-serif
+		transform: scaleY(1.2)
+		-webkit-transform: scaleY(1.2)
+		-ms-transform: scaleY(1.2)
+		font-size: em(14px)
+		padding: 5px 0
+	&__input, &__select-wrapper
+		display: block
+		+percent(312, 482)
+		padding-left: 12px
+		padding-right: 12px
+		border: 1px solid #cecece
+		border-radius: 6px
+		height: 30px
+		font-family: "PTSansNarrowRegular", sans-serif
+		float: right
+	&__select
+		opacity: 0
+		width: 100%
+		height: 28px
+		position: absolute
+		left: 0
+		right: 0
+		&-wrapper
+			position: relative
+			p
+				font-family: ""
+				position: absolute
+				color: #0a0a0a
+				font-size: 14px
+				height: 100%
+				left: 0
+				line-height: 30px
+				overflow: hidden
+				padding: 0 12px
+				top: 0
+				width: 100%
+				display: block
+

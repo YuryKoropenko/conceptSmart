@@ -26,13 +26,13 @@ ol, ul {
   list-style: none;
 }
 
-.clearfix:after, .bx-pager:after, .header-center__wrapper:after, .nav:after, .products__bottom:after, .footer-top__wrapper:after, .back-call__row:after {
+.clearfix:after, .bx-pager:after, .header-center__wrapper:after, .nav:after, .products__bottom:after, .footer-top__wrapper:after, .back-call__row:after, .checkout-top:after, .checkout-b__top:after, .checkout-b__wrapper:after, .checkout-b__row:after {
   content: '';
   display: table;
   clear: both;
 }
 
-.clearfix:before, .bx-pager:before, .header-center__wrapper:before, .nav:before, .products__bottom:before, .footer-top__wrapper:before, .back-call__row:before {
+.clearfix:before, .bx-pager:before, .header-center__wrapper:before, .nav:before, .products__bottom:before, .footer-top__wrapper:before, .back-call__row:before, .checkout-top:before, .checkout-b__top:before, .checkout-b__wrapper:before, .checkout-b__row:before {
   content: '';
   display: table;
 }
@@ -755,4 +755,174 @@ body {
   background: -ms-linear-gradient(top, #9dcf74 0%, #64933a 100%);
   background: linear-gradient(to bottom, #9dcf74 0%, #64933a 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9dcf74', endColorstr='#64933a', GradientType=0 );
+}
+
+/**/
+.checkout-top {
+  background-color: #fff;
+  display: inline-block;
+}
+
+.checkout-top__wrapper {
+  margin-top: 27px;
+  background-color: #ffc13c;
+  height: 25px;
+}
+
+.checkout-top__item {
+  display: block;
+  float: left;
+  margin-left: 16px;
+  position: relative;
+  height: 25px;
+  padding-top: 10px;
+}
+
+.checkout-top__item::before {
+  content: '/';
+  position: absolute;
+  left: -12px;
+  bottom: -1px;
+}
+
+.checkout-top__item:first-child {
+  margin-left: 0;
+}
+
+.checkout-top__item:first-child::before {
+  display: none;
+}
+
+.checkout-top__item:last-child {
+  padding-top: 0;
+}
+
+.checkout-top__item:last-child .checkout-top__link {
+  display: block;
+  padding-right: 16px;
+  text-transform: uppercase;
+  font-family: "Exo2Bold", sans-serif;
+  font-size: 1.375em;
+  transform: scaleY(1);
+  -webkit-transform: scaleY(1);
+  -ms-transform: scaleY(1);
+  vertical-align: bottom;
+}
+
+.checkout-top__link {
+  color: #202e31;
+  font-family: "PTSansNarrowRegular", sans-serif;
+  display: block;
+  transform: scaleY(1.2);
+  -webkit-transform: scaleY(1.2);
+  -ms-transform: scaleY(1.2);
+  font-size: 0.75em;
+}
+
+.checkout-b {
+  padding-top: 29px;
+}
+
+.checkout-b__left {
+  padding-right: 19px;
+}
+
+.checkout-b__top {
+  width: 100%;
+  background-color: #dedede;
+  height: 40px;
+  line-height: 40px;
+  float: left;
+}
+
+.checkout-b__top-f {
+  display: block;
+  float: left;
+  margin-left: 26px;
+  font-family: "PTSansNarrowRegular", sans-serif;
+  color: #191919;
+  font-size: 12px;
+  transform: scaleY(1.2);
+  -webkit-transform: scaleY(1.2);
+  -ms-transform: scaleY(1.2);
+}
+
+.checkout-b__top-r {
+  display: block;
+  float: right;
+  margin-right: 104px;
+  font-family: "PTSansNarrowRegular", sans-serif;
+  color: #191919;
+  font-size: 12px;
+  transform: scaleY(1.2);
+  -webkit-transform: scaleY(1.2);
+  -ms-transform: scaleY(1.2);
+}
+
+.checkout-b__first {
+  width: 68.75892%;
+  float: left;
+}
+
+.checkout-b__last {
+  width: 26.24822%;
+  float: right;
+}
+
+.checkout-b__row {
+  padding-top: 14px;
+}
+
+.checkout-b__label {
+  width: 155px;
+  width: 32.78008%;
+  display: block;
+  text-align: right;
+  float: left;
+  font-family: "PTSansNarrowRegular", sans-serif;
+  transform: scaleY(1.2);
+  -webkit-transform: scaleY(1.2);
+  -ms-transform: scaleY(1.2);
+  font-size: 0.875em;
+  padding: 5px 0;
+}
+
+.checkout-b__input, .checkout-b__select-wrapper {
+  display: block;
+  width: 64.73029%;
+  padding-left: 12px;
+  padding-right: 12px;
+  border: 1px solid #cecece;
+  border-radius: 6px;
+  height: 30px;
+  font-family: "PTSansNarrowRegular", sans-serif;
+  float: right;
+}
+
+.checkout-b__select {
+  opacity: 0;
+  width: 100%;
+  height: 28px;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.checkout-b__select-wrapper {
+  position: relative;
+}
+
+.checkout-b__select-wrapper p {
+  font-family: "";
+  position: absolute;
+  color: #0a0a0a;
+  font-size: 14px;
+  height: 100%;
+  left: 0;
+  line-height: 30px;
+  overflow: hidden;
+  padding: 0 12px;
+  top: 0;
+  width: 100%;
+  display: block;
 }
