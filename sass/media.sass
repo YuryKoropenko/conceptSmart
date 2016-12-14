@@ -8,17 +8,112 @@
 
 
 /* Medium Devices, Desktops */
-@media only screen and (max-width : 992px)
+@media only screen and (max-width : 991px)
+	.phone
+		text-align: left
+	.header-top__nav
+		float: right
+	.nav
+		background-color: #202e31
+		position: absolute
+		z-index: 999
+		width: 300px
+		right: 0
+		top: 50px
+		padding-left: 0
+		border-left: 2px solid #202e31
+		border-right: 2px solid #202e31
+		border-bottom: 2px solid #202e31
+		text-align: center
+		display: none
+		&__toggle
+			display: inline-block
+			&-icon
+				display: inline-block
+				font-size: em(24px)
+				display: block
+				line-height: 50px
+				color: #fff
+				&:hover
+					color: #fff
+				&:active
+					color: #fff
+				&:focus
+					color: #fff
+		&__item
+			display: block
+			width: 100%
+		&__link
+			&::after
+				display: none
+	.header-center__logo,
+	.header-center__search,
+		width: 100%
+		text-align: center
+		padding-top: 10px
+		padding-bottom: 16px
+	.header-center__authentication,
+	.header-center__basket
+		width: 50%
+	.search,
+	.authentication,
+	.basket
+		margin: 0 auto
+	.information
+		padding-left: 0
+		padding-right: 0
+	.b-phone__number
+		text-align: right
 	/**/
 
 
 /* Small Devices, Tablets */
-@media only screen and (max-width : 768px)
+@media only screen and (max-width : 767px)
+	.information
+		text-align: center
+		padding-top: 20px
+	.bx-wrapper
+		display: none
+	.slider-head-menu
+		padding-bottom: 0
+	.head-slider__slider
+		margin-top: 0
+	.menu
+		width: 100%
+		display: none !important
+	.back-call
+		&__row-c
+			&-first
+				width: 100%
+			&-last
+				width: 100%
+		&__info
+			margin-top: 2px
 	/**/
 
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
+	.footer-bottom
+		padding-bottom: 30px
+	.search
+		&__wrapper
+			width: 286px
+			margin: 0 auto
+		&__input
+			width: 188px
+	.header-center__authentication
+		float: left
+		padding-left: 0
+	.authentication
+		float: left
+	.header-center__basket
+		float: right
+		padding-right: 10px
+	.basket
+		float: right
+	.nav
+		width: 320px
 	/**/
 
 

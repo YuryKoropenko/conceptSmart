@@ -12,4 +12,9 @@ $(document).ready(function() {
 	});
 /*phone*/
 	$(".back-call-phone").mask("+7 (999) 999-99-99", {placeholder: "+7 (xxx) xxx-xx-xx"});
+/*menu-toggle*/
+	$(".nav__toggle").on("click", function() {
+		$(this).parent().children(".nav").stop(true, false).fadeToggle(300);
+		return false
+	});
 });

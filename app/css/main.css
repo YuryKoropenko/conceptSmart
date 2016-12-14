@@ -203,6 +203,10 @@ body {
   border-left: 8px solid #ffc13c;
 }
 
+.nav__toggle {
+  display: none;
+}
+
 .phone {
   text-align: right;
   padding-right: 11px;
@@ -236,6 +240,7 @@ body {
 
 .search {
   max-width: 386px;
+  text-align: left !important;
 }
 
 .search__wrapper {
