@@ -234,8 +234,7 @@ body
 	background-color: #fff
 	padding: 12px
 .novelty
-	padding: 0 12px
-	margin-bottom: 35px
+	margin: 0 12px 35px
 	&__title
 		font-size: em(36px)
 		font-family: "Exo2Bold", sans-serif
@@ -478,6 +477,8 @@ body
 		margin-top: 27px
 		background-color: #ffc13c
 		height: 25px
+		margin-left: 12px
+		margin-right: 12px
 	&__item
 		display: block
 		float: left
@@ -516,8 +517,12 @@ body
 		font-size: em(12px)
 .checkout-b
 	padding-top: 29px
+	padding-bottom: 117px
 	&__left
-		padding-right: 19px
+		padding-right: 12px
+		padding-left: 12px
+	&__right
+		padding-right: 12px
 	&__top
 		width: 100%
 		background-color: #dedede
@@ -547,6 +552,8 @@ body
 			-ms-transform: scaleY(1.2)
 	&__wrapper
 		@extend .clearfix
+		padding-bottom: 28px
+		border-bottom: 2px solid #dedede
 	&__first
 		+percent(482, 701)
 		float: left
@@ -568,6 +575,16 @@ body
 		-ms-transform: scaleY(1.2)
 		font-size: em(14px)
 		padding: 5px 0
+		&-span
+			padding-left: 6px
+			display: inline-block
+			position: relative
+			&::before
+				content: '*'
+				color: #da2413
+				position: absolute
+				left: 0
+				top: 0
 	&__input, &__select-wrapper
 		display: block
 		+percent(312, 482)
@@ -588,16 +605,217 @@ body
 		&-wrapper
 			position: relative
 			p
-				font-family: ""
+				font-family: "PTSansNarrowBold", sans-serif
 				position: absolute
-				color: #0a0a0a
+				color: #12152f
 				font-size: 14px
 				height: 100%
 				left: 0
 				line-height: 30px
 				overflow: hidden
-				padding: 0 12px
+				padding-left: 12px
+				padding-right: 12px
 				top: 0
 				width: 100%
 				display: block
+				&::after
+					content: "\f0d7"
+					font-family: FontAwesome
+					position: absolute
+					right: 12px
+					top: 50%
+					transform: translateY(-50%)
+					border-left: 1px solid #cecece
+					padding-left: 12px
+	&__active
+		&::after
+			content: "\f0d8" !important
+			font-family: FontAwesome
+	&__radio
+		padding-top: 14px
+		&-row
+			padding-bottom: 14px
+			padding-left: 25px
+		&-bt
+			display: none
+		&-label
+			color: #191919
+			font-family: "PTSansNarrowRegular", sans-serif
+			font-size: em(15px)
+			transform: scaleY(1.2)
+			-webkit-transform: scaleY(1.2)
+			-ms-transform: scaleY(1.2)
+			display: inline-block
+			cursor: pointer
+			position: relative
+			&::before
+				content: ''
+				display: inline-block
+				width: 14px
+				height: 14px
+				transform: scaleY(0.8)
+				-webkit-transform: scaleY(0.8)
+				-ms-transform: scaleY(0.8)
+				background-image: url(../img/radio.png)
+				background-repeat: no-repeat
+				background-position: left top
+				position: absolute
+				left: -25px
+				top: 2px
+		&-fs
+			color: #65604d
+			font-family: "PTSansNarrowRegular", sans-serif
+			font-size: 9px
+			transform: scaleY(1.2)
+			-webkit-transform: scaleY(1.2)
+			-ms-transform: scaleY(1.2)
+			line-height: 1.25
+			display: block
+			padding-top: 2px
+			&:last-child
+				margin-top: 8px
+		&-ss
+			color: #252e31
+			transform: scaleY(1.2)
+			-webkit-transform: scaleY(1.2)
+			-ms-transform: scaleY(1.2)
+			font-size: 9px
+			font-family: "PTSansNarrowRegular", sans-serif
+			text-decoration: underline
+			&:hover
+				text-decoration: none
+				color: #252e31
+	&__bottom
+		padding-left: 178px
+		padding-top: 8px
+		&-checkbox
+			display: inline-block
+			position: relative
+			margin-bottom: 40px
+			&-input
+				margin-right: 10px
+				position: absolute
+				left: 0
+				top: 50%
+				transform: translateY(-50%)
+			&-label
+				color: #191919
+				font-family: "PTSansNarrowRegular", sans-serif
+				font-size: 12px
+				transform: scaleY(1.2)
+				-webkit-transform: scaleY(1.2)
+				-ms-transform: scaleY(1.2)
+				display: inline-block
+				padding-left: 28px
+		&-sum
+			padding-left: 27px
+			display: inline-block
+			&-summa
+				font-family: "PTSansNarrowBold", sans-serif
+				color: #12152f
+				font-size: 18px
+				margin-left: 16px
+		&-button
+			display: inline-block
+			padding-left: 24px
 
+input[type=radio]:checked + .checkout-b__radio-label:before
+	background-position: right top
+.c-bar
+	&__title
+		color: #191919
+		font-family: "PTSansNarrowBold", sans-serif
+		font-size: em(18px)
+		margin-bottom: 5px
+	&__row
+		@extend .clearfix
+		padding: 6px 0
+	&__link
+		font-family: "OpenSansRegular", sans-serif
+		text-transform: uppercase
+		font-size: em(12px)
+		display: block
+		transform: scaleY(1.2)
+		-webkit-transform: scaleY(1.2)
+		-ms-transform: scaleY(1.2)
+		color: #4c4c4c
+		float: left
+		line-height: 1.25
+	&__col
+		float: right
+		display: block
+		color: #191919
+		font-family: "PTSansNarrowRegular", sans-serif
+		font-size: em(12px)
+		transform: scaleY(1.2)
+		-webkit-transform: scaleY(1.2)
+		-ms-transform: scaleY(1.2)
+	&__sum
+		border-top: 1px solid #191919
+		padding: 8px 0
+		&-summa
+			font-family: "PTSansNarrowBold", sans-serif
+			color: #12152f
+			font-size: 15px
+			margin-left: 7px
+			display: inline-block
+			vertical-align: middle
+		&-text
+			color: #191919
+			font-family: "PTSansNarrowRegular", sans-serif
+			font-size: 12px
+			transform: scaleY(1.2)
+			-webkit-transform: scaleY(1.2)
+			-ms-transform: scaleY(1.2)
+			display: inline-block
+			vertical-align: middle
+	&__info
+		padding-top: 22px
+		&-title
+			font-family: "OpenSansRegular", sans-serif
+			font-size: em(18px)
+			color: #191919
+		&-link
+			color: #4c4c4c
+			font-family: "OpenSansRegular", sans-serif
+			font-size: 14px
+			line-height: 1.25
+			display: block
+			padding-top: 16px
+/*basket*/
+.basket
+	&-wrapper
+		padding-top: 42px
+	&-right
+		padding-left: 12px
+	&-left
+		padding-right: 12px
+		padding-left: 12px
+		&__top
+			height: 30px
+			width: 100%
+			background-color: #dedede
+			@extend .clearfix
+			line-height: 30px
+			font-family: "PTSansNarrowRegular", sans-serif
+			font-size: em(10px)
+			color: #191919
+			&-tov
+				+percent(327, 700)
+				padding-left: 76 * 100 / 700 + %
+				float: left
+				transform: scaleY(1.2)
+				-webkit-transform: scaleY(1.2)
+				-ms-transform: scaleY(1.2)
+			&-col
+				+percent(198, 700)
+				float: left
+				transform: scaleY(1.2)
+				-webkit-transform: scaleY(1.2)
+				-ms-transform: scaleY(1.2)
+			&-sto
+				+percent(99, 700)
+				float: right
+				transform: scaleY(1.2)
+				-webkit-transform: scaleY(1.2)
+				-ms-transform: scaleY(1.2)

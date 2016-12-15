@@ -19,9 +19,12 @@ $(document).ready(function() {
 	});
 /*select*/
 	$('select').each(function(){
-	$(this).siblings('p').text( $(this).children('option:selected').text() );
+		$(this).siblings('p').text( $(this).children('option:selected').text() );
 	});
 	$('select').change(function(){
-	$(this).siblings('p').text( $(this).children('option:selected').text() );
+		$(this).siblings('p').text( $(this).children('option:selected').text() );
+	});
+	$(".checkout-b__select").on("click", function() {
+		$(this).parent().children("p").toggleClass("checkout-b__active");
 	});
 });
