@@ -131,18 +131,15 @@ body
 .authentication
 	text-align: center
 	border: 2px solid #202e31
-	padding: 4px 0
 	width: 164px
 	&__link
 		font-family: "PTSansNarrowRegular", sans-serif
 		display: inline-block
 		text-transform: uppercase
-		font-size: em(10px)
-		line-height: 1.1
+		font-size: em(14px)
+		line-height: 1
+		padding: 1px 0
 		color: #202e31
-		transform: scaleY(1.2)
-		-webkit-transform: scaleY(1.2)
-		-ms-transform: scaleY(1.2)
 		text-decoration: underline
 .basket
 	display: block
@@ -219,7 +216,7 @@ body
 		color: #202e31
 		font-family: "PTSansNarrowRegular", sans-serif
 		line-height: 1.25
-		font-size: em(13px)
+		font-size: em(16px)
 		padding: 8px 16px
 		text-align: left
 		&:hover
@@ -345,18 +342,13 @@ body
 		display: block
 	&__link, &__description
 		display: inline-block
-		font-size: 12px
-		transform: scaleY(1.2)
-		-webkit-transform: scaleY(1.2)
-		-ms-transform: scaleY(1.2)
+		font-size: 14px
 		color: #252e31
 		font-family: "PTSansNarrowRegular", sans-serif
 		line-height: 22px
 		&:hover
 			text-decoration: underline
 	&__description
-		line-height: 19.2px
-		padding: 13px 0 0
 		display: inline-block
 		&:hover
 			text-decoration: none
@@ -386,22 +378,16 @@ body
 		text-transform: uppercase
 	&__info
 		font-family: "PTSansNarrowRegular", sans-serif
-		font-size: em(11px)
-		transform: scaleY(1.2)
-		-webkit-transform: scaleY(1.2)
-		-ms-transform: scaleY(1.2)
+		font-size: em(14px)
 		line-height: 1.5
 		display: block
 		margin-top: 26px
 	&__label
 		display: inline-block
 		font-family: "PTSansNarrowRegular", sans-serif
-		font-size: em(15px)
+		font-size: em(18px)
 		line-height: 1.25
 		color: #191919
-		transform: scaleY(1.2)
-		-webkit-transform: scaleY(1.2)
-		-ms-transform: scaleY(1.2)
 		padding-bottom: 3px
 		margin-left: 6px
 		&-phone
@@ -452,10 +438,7 @@ body
 		line-height: 48px
 		color: #fff
 		font-family: "PTSansNarrowRegular", sans-serif
-		font-size: em(15px)
-		transform: scaleY(1.2)
-		-webkit-transform: scaleY(1.2)
-		-ms-transform: scaleY(1.2)
+		font-size: em(18px)
 		border-radius: 4px
 		-webkit-box-shadow: 0px 2px 0px 0px rgba(2,8,10,1)
 		-moz-box-shadow: 0px 2px 0px 0px rgba(2,8,10,1)
@@ -485,7 +468,7 @@ body
 		margin-left: 16px
 		position: relative
 		height: 25px
-		padding-top: 10px
+		padding-top: 7px
 		&::before
 			content: '/'
 			position: absolute
@@ -503,21 +486,17 @@ body
 				text-transform: uppercase
 				font-family: "Exo2Bold", sans-serif
 				font-size: em(22px)
-				transform: scaleY(1)
-				-webkit-transform: scaleY(1)
-				-ms-transform: scaleY(1)
-				vertical-align: bottom
+				letter-spacing: 0.5px
+				text-decoration: none
 	&__link
 		color: #202e31
 		font-family: "PTSansNarrowRegular", sans-serif
 		display: block
-		transform: scaleY(1.2)
-		-webkit-transform: scaleY(1.2)
-		-ms-transform: scaleY(1.2)
-		font-size: em(12px)
+		font-size: em(14px)
+		text-decoration: underline
 .checkout-b
 	padding-top: 29px
-	padding-bottom: 117px
+	padding-bottom: 114px
 	&__left
 		padding-right: 12px
 		padding-left: 12px
@@ -533,23 +512,19 @@ body
 		&-f
 			display: block
 			float: left
-			margin-left: 26px
+			padding-left: 26px
 			font-family: "PTSansNarrowRegular", sans-serif
 			color: #191919
-			font-size: 12px
-			transform: scaleY(1.2)
-			-webkit-transform: scaleY(1.2)
-			-ms-transform: scaleY(1.2)
+			font-size: em(14px)
+			width: 68.7589%
 		&-r
 			display: block
 			float: right
-			margin-right: 104px
 			font-family: "PTSansNarrowRegular", sans-serif
 			color: #191919
-			font-size: 12px
-			transform: scaleY(1.2)
-			-webkit-transform: scaleY(1.2)
-			-ms-transform: scaleY(1.2)
+			font-size: em(14px)
+			width: 26.2482%
+			list-style-type: lower-roman
 	&__wrapper
 		@extend .clearfix
 		padding-bottom: 28px
@@ -570,10 +545,7 @@ body
 		text-align: right
 		float: left
 		font-family: "PTSansNarrowRegular", sans-serif
-		transform: scaleY(1.2)
-		-webkit-transform: scaleY(1.2)
-		-ms-transform: scaleY(1.2)
-		font-size: em(14px)
+		font-size: em(18px)
 		padding: 5px 0
 		&-span
 			padding-left: 6px
@@ -622,6 +594,7 @@ body
 					content: "\f0d7"
 					font-family: FontAwesome
 					position: absolute
+					font-size: 20px
 					right: 12px
 					top: 50%
 					transform: translateY(-50%)
@@ -641,10 +614,7 @@ body
 		&-label
 			color: #191919
 			font-family: "PTSansNarrowRegular", sans-serif
-			font-size: em(15px)
-			transform: scaleY(1.2)
-			-webkit-transform: scaleY(1.2)
-			-ms-transform: scaleY(1.2)
+			font-size: em(18px)
 			display: inline-block
 			cursor: pointer
 			position: relative
@@ -653,22 +623,16 @@ body
 				display: inline-block
 				width: 14px
 				height: 14px
-				transform: scaleY(0.8)
-				-webkit-transform: scaleY(0.8)
-				-ms-transform: scaleY(0.8)
 				background-image: url(../img/radio.png)
 				background-repeat: no-repeat
 				background-position: left top
 				position: absolute
 				left: -25px
-				top: 2px
+				top: 4px
 		&-fs
 			color: #65604d
 			font-family: "PTSansNarrowRegular", sans-serif
-			font-size: 9px
-			transform: scaleY(1.2)
-			-webkit-transform: scaleY(1.2)
-			-ms-transform: scaleY(1.2)
+			font-size: em(12px)
 			line-height: 1.25
 			display: block
 			padding-top: 2px
@@ -676,17 +640,14 @@ body
 				margin-top: 8px
 		&-ss
 			color: #252e31
-			transform: scaleY(1.2)
-			-webkit-transform: scaleY(1.2)
-			-ms-transform: scaleY(1.2)
-			font-size: 9px
+			font-size: em(12px)
 			font-family: "PTSansNarrowRegular", sans-serif
 			text-decoration: underline
 			&:hover
 				text-decoration: none
 				color: #252e31
 	&__bottom
-		padding-left: 178px
+		padding-left: 187px
 		padding-top: 8px
 		&-checkbox
 			display: inline-block
@@ -701,24 +662,19 @@ body
 			&-label
 				color: #191919
 				font-family: "PTSansNarrowRegular", sans-serif
-				font-size: 12px
-				transform: scaleY(1.2)
-				-webkit-transform: scaleY(1.2)
-				-ms-transform: scaleY(1.2)
 				display: inline-block
 				padding-left: 28px
 		&-sum
-			padding-left: 27px
+			padding-left: 10px
 			display: inline-block
 			&-summa
 				font-family: "PTSansNarrowBold", sans-serif
 				color: #12152f
-				font-size: 18px
+				font-size: em(18px)
 				margin-left: 16px
 		&-button
 			display: inline-block
-			padding-left: 24px
-
+			padding-left: 20px
 input[type=radio]:checked + .checkout-b__radio-label:before
 	background-position: right top
 .c-bar
@@ -731,13 +687,10 @@ input[type=radio]:checked + .checkout-b__radio-label:before
 		@extend .clearfix
 		padding: 6px 0
 	&__link
-		font-family: "OpenSansRegular", sans-serif
+		font-family: "PTSansNarrowRegular", sans-serif
 		text-transform: uppercase
-		font-size: em(12px)
+		font-size: em(14px)
 		display: block
-		transform: scaleY(1.2)
-		-webkit-transform: scaleY(1.2)
-		-ms-transform: scaleY(1.2)
 		color: #4c4c4c
 		float: left
 		line-height: 1.25
@@ -746,27 +699,20 @@ input[type=radio]:checked + .checkout-b__radio-label:before
 		display: block
 		color: #191919
 		font-family: "PTSansNarrowRegular", sans-serif
-		font-size: em(12px)
-		transform: scaleY(1.2)
-		-webkit-transform: scaleY(1.2)
-		-ms-transform: scaleY(1.2)
+		font-size: em(14px)
 	&__sum
 		border-top: 1px solid #191919
 		padding: 8px 0
 		&-summa
 			font-family: "PTSansNarrowBold", sans-serif
 			color: #12152f
-			font-size: 15px
+			font-size: 14px
 			margin-left: 7px
 			display: inline-block
 			vertical-align: middle
 		&-text
 			color: #191919
 			font-family: "PTSansNarrowRegular", sans-serif
-			font-size: 12px
-			transform: scaleY(1.2)
-			-webkit-transform: scaleY(1.2)
-			-ms-transform: scaleY(1.2)
 			display: inline-block
 			vertical-align: middle
 	&__info
@@ -778,7 +724,7 @@ input[type=radio]:checked + .checkout-b__radio-label:before
 		&-link
 			color: #4c4c4c
 			font-family: "OpenSansRegular", sans-serif
-			font-size: 14px
+			font-size: em(14px)
 			line-height: 1.25
 			display: block
 			padding-top: 16px
@@ -786,8 +732,7 @@ input[type=radio]:checked + .checkout-b__radio-label:before
 .basket
 	&-wrapper
 		padding-top: 42px
-	&-right
-		padding-left: 12px
+		padding-bottom: 54px
 	&-left
 		padding-right: 12px
 		padding-left: 12px
@@ -798,24 +743,167 @@ input[type=radio]:checked + .checkout-b__radio-label:before
 			@extend .clearfix
 			line-height: 30px
 			font-family: "PTSansNarrowRegular", sans-serif
-			font-size: em(10px)
+			font-size: em(14px)
 			color: #191919
 			&-tov
 				+percent(327, 700)
-				padding-left: 76 * 100 / 700 + %
+				margin-left: 76 * 100 / 700 + %
 				float: left
-				transform: scaleY(1.2)
-				-webkit-transform: scaleY(1.2)
-				-ms-transform: scaleY(1.2)
 			&-col
 				+percent(198, 700)
 				float: left
-				transform: scaleY(1.2)
-				-webkit-transform: scaleY(1.2)
-				-ms-transform: scaleY(1.2)
 			&-sto
 				+percent(99, 700)
 				float: right
-				transform: scaleY(1.2)
-				-webkit-transform: scaleY(1.2)
-				-ms-transform: scaleY(1.2)
+		&__item
+			@extend .clearfix
+			height: 92px
+			border-bottom: 2px solid #dedede
+			&-remove
+				+percent(76, 700)
+				float: left
+				line-height: 90px
+				&-link
+					text-align: center
+					color: #da2413
+					font-family: "Arial", sans-serif
+					font-weight: bold
+					font-size: 18px
+					display: block
+					&:hover
+						color: #da2413
+			&-tov
+				+percent(327, 700)
+				float: left
+				padding: 7.5px 0
+				&-img
+					display: block
+					width: 79px
+					height: 77px
+					float: left
+				&-name
+					margin-left: 104px
+					text-transform: uppercase
+					font-size: em(16px)
+					font-family: "PTSansNarrowRegular", sans-serif
+					color: #191919
+					line-height: 1.50
+					margin-top: 10px
+				&-art
+					margin-left: 104px
+					display: block
+					font-family: "PTSansNarrowRegular", sans-serif
+					font-size: em(12px)
+					color: #191919
+					line-height: 1.25
+					padding-top: 2px
+			&-col
+				+percent(198, 700)
+				@extend .clearfix
+				float: left
+				padding: 34px 0
+				&-qt
+					display: inline-block
+					float: left
+					font-family: "PTSansNarrowRegular", sans-serif
+					font-size: em(18px)
+					color: #191919
+				&-plus, &-minus
+					width: 23px
+					height: 23px
+					border-radius: 50%
+					background-color: #202e31
+					color: #fff
+					display: block
+					text-align: center
+					line-height: 19px
+					font-size: 28px
+					display: inline-block
+					vertical-align: middle
+					float: right
+					margin-right: 4px
+					&:hover
+						color: #fff
+					&:active
+						color: #fff
+					&:focus
+						color: #fff
+				&-minus
+					line-height: 16px
+					margin-right: 22%
+			&-pay
+				+percent(99, 700)
+				float: right
+				font-family: "PTSansNarrowRegular", sans-serif
+				font-size: em(14px)
+				color: #191919
+				line-height: 90px
+		&__promo
+			text-align: center
+			border-bottom: 2px solid #dedede
+			padding: 7px 0
+			&-label
+				display: inline-block
+				font-family: "PTSansNarrowRegular", sans-serif
+				padding-right: 8px
+			&-input
+				width: 95px
+				display: inline-block
+		&__pay
+			text-align: right
+			padding: 32px 0
+			&-text
+				display: inline-block
+				margin-right: 25px
+				color: #191919
+				font-family: "PTSansNarrowRegular", sans-serif
+				padding-right: 8px
+				vertical-align: middle
+			&-summa
+				display: inline-block
+				font-family: "PTSansNarrowBold", sans-serif
+				color: #12152f
+				font-size: em(18px)
+				margin-left: 7px
+				display: inline-block
+				vertical-align: middle
+				margin-right: 12px
+		&__button
+			text-align: right
+			&-bt
+				display: inline-block
+				background-color: #ffc13c
+				padding: 0 47px
+				height: 53px
+				line-height: 53px
+				color: #252e31
+				font-family: "PTSansNarrowRegular", sans-serif
+				font-size: em(18px)
+				border-radius: 4px
+				-webkit-box-shadow: 0px 2px 0px 0px rgba(2,8,10,1)
+				-moz-box-shadow: 0px 2px 0px 0px rgba(2,8,10,1)
+				box-shadow: 0px 2px 0px 0px rgba(2,8,10,1)
+	&-right
+		padding-left: 12px
+		&__title
+			font-family: "PTSansNarrowRegular", sans-serif
+			font-size: em(18px)
+			color: #191919
+		&__description
+			&-paragraph
+				padding-top: 20px
+				display: block
+				font-family: "OpenSansRegular", sans-serif
+				font-size: em(14px)
+				line-height: 1.35
+			&-bold
+				font-family: "OpenSansBold", sans-serif
+				color: #4c4c4c
+			&-cash
+				font-family: "OpenSansBold", sans-serif
+				color: #1e1f26
+			&-red
+				font-family: "PTSansBold", sans-serif
+				text-transform: uppercase
+				color: #da2413
+				font-size: 1.143em
