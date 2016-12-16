@@ -13,6 +13,12 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 991px)
+	.basket-right
+		padding-top: 20px
+	.checkout-b__label, .checkout-b__input, .checkout-b__select-wrapper
+		display: block
+		width: 100%
+		text-align: left
 	.checkout-b__bottom-checkbox-input
 		left: -22px
 	.checkout-b__bottom-checkbox-label
@@ -88,6 +94,24 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 767px)
+	.basket-left__pay, .basket-left__button
+		text-align: center
+	.basket-left__top-sto
+		width: 25%
+	.basket-left__item-pay
+		width: 25%
+	.basket-left__top-col, .basket-left__item-col
+		display: none
+	.basket-left__top-tov
+		padding-left: 5px
+		width: 75%
+		margin-left: 0
+	.basket-left__item-tov
+		width: 57.5714%
+	.basket-left__item-remove
+		display: none
+	.basket-left__item-col-minus, .basket-left__item-col-plus
+		display: none
 	.information
 		text-align: center
 		padding-top: 20px
@@ -113,6 +137,8 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
+	.basket-left__item
+		height: 100%
 	.checkout-b__top
 		display: none
 	.checkout-b__first
