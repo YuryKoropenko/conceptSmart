@@ -184,6 +184,13 @@ body
 			position: absolute
 			right: 0
 			top: 0
+		&-first
+			background-color: #202e31
+			color: #fff
+			&::after
+				@include triangle(8px 11px, #ffc13c #202e31, up-right)
+			.menu__link
+				color: #fff
 	&__link
 		color: #202e31
 		display: block
@@ -232,6 +239,8 @@ body
 	padding: 12px
 .products-wp
 	padding-top: 35px
+	padding-left: 12px
+	padding-right: 12px 
 .novelty
 	margin: 0 12px 35px
 	&__title
@@ -1114,6 +1123,7 @@ input[type=radio]:checked + .checkout-b__radio-label:before
 		line-height: 28px
 		float: left
 		margin-right: 14px
+		color: #202e31
 	&__select
 		max-width: 260px
 		display: inline-block
@@ -1126,3 +1136,46 @@ input[type=radio]:checked + .checkout-b__radio-label:before
 	&__input
 		&::after
 			border-left: none !important
+.pagination
+	display: inline-block
+	font-size: 0
+	&__wrapper
+		padding: 38px 12px 0
+		&-down
+			padding: 0 12px 38px
+	&__text
+		display: inline-block
+		font-family: "PTSansNarrowRegular", sans-serif
+		font-size: em(14px)
+		color: #202e31
+	&__item
+		display: inline-block
+		height: 22px
+		border: 1px solid transparent
+		width: 22px
+		text-align: center
+		line-height: 22px
+		margin-left: 2px
+		&:first-child
+			margin-left: 0
+		&-active
+			border: 1px solid #202e31
+		&-first
+			height: 16px
+			padding-top: 2px
+		&-last
+			height: 16px
+			padding-top: 2px
+	&__link
+		font-size: 14px
+		color: #202e31
+		font-family: "PTSansNarrowRegular", sans-serif
+		display: block
+		&-first
+			@include triangle(14px 12px, #252e31, left)
+			margin: 0 auto
+		&-last
+			@include triangle(14px 12px, #252e31, right)
+			margin: 0 auto
+.f-description
+	padding: 0 12px 30px

@@ -443,6 +443,22 @@ body {
   top: 0;
 }
 
+.menu__item-first {
+  background-color: #202e31;
+  color: #fff;
+}
+
+.menu__item-first::after {
+  height: 0;
+  width: 0;
+  border-top: 11px solid #ffc13c;
+  border-left: 8px solid #202e31;
+}
+
+.menu__item-first .menu__link {
+  color: #fff;
+}
+
 .menu__link {
   color: #202e31;
   display: block;
@@ -506,6 +522,8 @@ body {
 
 .products-wp {
   padding-top: 35px;
+  padding-left: 12px;
+  padding-right: 12px;
 }
 
 .novelty {
@@ -1749,6 +1767,7 @@ input[type=radio]:checked + .checkout-b__radio-label:before {
   line-height: 28px;
   float: left;
   margin-right: 14px;
+  color: #202e31;
 }
 
 .filter__select {
@@ -1766,4 +1785,81 @@ input[type=radio]:checked + .checkout-b__radio-label:before {
 
 .filter__input::after {
   border-left: none !important;
+}
+
+.pagination {
+  display: inline-block;
+  font-size: 0;
+}
+
+.pagination__wrapper {
+  padding: 38px 12px 0;
+}
+
+.pagination__wrapper-down {
+  padding: 0 12px 38px;
+}
+
+.pagination__text {
+  display: inline-block;
+  font-family: "PTSansNarrowRegular", sans-serif;
+  font-size: 0.875em;
+  color: #202e31;
+}
+
+.pagination__item {
+  display: inline-block;
+  height: 22px;
+  border: 1px solid transparent;
+  width: 22px;
+  text-align: center;
+  line-height: 22px;
+  margin-left: 2px;
+}
+
+.pagination__item:first-child {
+  margin-left: 0;
+}
+
+.pagination__item-active {
+  border: 1px solid #202e31;
+}
+
+.pagination__item-first {
+  height: 16px;
+  padding-top: 2px;
+}
+
+.pagination__item-last {
+  height: 16px;
+  padding-top: 2px;
+}
+
+.pagination__link {
+  font-size: 14px;
+  color: #202e31;
+  font-family: "PTSansNarrowRegular", sans-serif;
+  display: block;
+}
+
+.pagination__link-first {
+  height: 0;
+  width: 0;
+  border-bottom: 7px solid transparent;
+  border-right: 12px solid #252e31;
+  border-top: 7px solid transparent;
+  margin: 0 auto;
+}
+
+.pagination__link-last {
+  height: 0;
+  width: 0;
+  border-bottom: 7px solid transparent;
+  border-left: 12px solid #252e31;
+  border-top: 7px solid transparent;
+  margin: 0 auto;
+}
+
+.f-description {
+  padding: 0 12px 30px;
 }
