@@ -230,6 +230,8 @@ body
 	z-index: 999
 	background-color: #fff
 	padding: 12px
+.products-wp
+	padding-top: 35px
 .novelty
 	margin: 0 12px 35px
 	&__title
@@ -266,19 +268,26 @@ body
 	&__title
 		font-family: "PTSansNarrowRegular", sans-serif
 		text-decoration: underline
-		font-size: em(12px)
+		font-size: em(14px)
 		color: #0169bf
+		line-height: 1.25
+		margin-top: 8px
+		display: block
+		&:hover
+			color: #0169bf
+	&__vendor-code
+		font-size: em(12px)
+		color: #595959
+		font-family: "PTSansNarrowRegular", sans-serif
 	&__bottom
 		width: 100%
 		@extend .clearfix
 	&__price
-		font-family: "OpenSansRegular", sans-serif
-		color: #202e31
+		font-family: "PTSansNarrowBold", sans-serif
+		color: #38384a
 		display: block
 		float: left
-		&-first
-			font-size: em(20px)
-			padding-right: 3px
+		font-size: em(20px)
 	&__button
 		font-family: "PTSansNarrowBold", sans-serif
 		background-color: #ffc13c
@@ -933,3 +942,187 @@ input[type=radio]:checked + .checkout-b__radio-label:before
 		font-size: em(22px)
 		line-height: 1.25
 		text-transform: uppercase
+.c-description
+	padding-right: 12px
+	&__art
+		color: #202e31
+		font-family: "PTSansNarrowRegular", sans-serif
+		font-size: em(14px)
+		padding-bottom: 3px
+	&__man
+		color: #202e31
+		font-family: "PTSansNarrowRegular", sans-serif
+		font-size: em(14px)
+		padding-bottom: 20px
+		&-link
+			color: #202e31
+			text-decoration: underline
+	&__pay
+		color: #202e31
+		font-family: "Exo2Bold", sans-serif
+		font-size: em(30px)
+		display: inline-block
+		line-height: 100%
+		&-old
+			color: #f00
+			font-size: em(18px)
+			font-family: "PTSansNarrowRegular", sans-serif
+			text-decoration: line-through
+			line-height: 100%
+		&-val
+			font-size: 14px
+			text-transform: uppercase
+			margin-left: 2px
+	&__button
+		text-transform: uppercase
+		font-family: "Exo2Bold", sans-serif
+		color: #fff
+		background-color: #609f46
+		padding: 0 30px
+		font-size: em(22px)
+		display: inline-block
+		height: 50px
+		line-height: 50px
+		border-radius: 4px
+		-webkit-box-shadow: 0px 2px 0px 0px rgba(200, 200, 200, 1)
+		-moz-box-shadow: 0px 2px 0px 0px rgba(200, 200, 200, 1)
+		box-shadow: 0px 2px 0px 0px rgba(200, 200, 200, 1)
+		margin-left: 22px
+	&__one-click
+		background-image: url(../img/smart-o/basket-oc.png)
+		background-repeat: no-repeat
+		background-position: left center
+		padding-left: 30px
+		color: #f00
+		text-decoration: underline
+		display: inline-block
+		&:hover
+			color: #f00
+		&-wrapp
+			padding-top: 28px
+			padding-bottom: 40px
+	&__description
+		font-size: em(14px)
+		color: #202e31
+		font-family: "PTSansNarrowRegular", sans-serif
+		line-height: 1.5
+		letter-spacing: 0.5px
+		padding-bottom: 38px
+		&-bold
+			font-family: "PTSansNarrowBold", sans-serif
+	&__tabs
+		&-wrapper
+			@extend .clearfix
+			border-bottom: 3px solid #ffc13c
+		&-item
+			font-family: "Exo2Bold", sans-serif
+			font-size: em(12px)
+			text-transform: uppercase
+			padding: 0 16px
+			line-height: 40px
+			height: 40px
+			float: left
+			display: block
+			background-color: #252e31
+			color: #fff
+			cursor: pointer
+			margin-left: 3px
+			position: relative
+			&::after
+				content: ''
+				@include triangle(8px 11px, #fff #252e31, up-right)
+				position: absolute
+				top: 0
+				right: 0
+			&:first-child
+				margin-left: 0
+		.active
+			background-color: #ffc13c
+			color: #252e31
+			&::after
+				@include triangle(8px 11px, #fff #ffc13c, up-right)
+		&-cont
+			height: 195px
+			&-wp
+				padding: 12px 0
+			&-item
+				font-family: "PTSansNarrowRegular", sans-serif
+				font-size: em(14px)
+				line-height: 1.5
+				color: #202e31
+.checkout-n__wrapper
+	position: relative
+.checkout-n__item__similar
+	padding-top: 0 !important
+.checkout-n__similar
+	font-size: em(22px)
+	font-family: "Exo2Bold", sans-serif
+	text-transform: uppercase
+	letter-spacing: 0.5px
+	text-decoration: none
+	&-tr
+		position: absolute
+		width: 52px
+		height: 20px
+		right: 18px
+		top: 50%
+		margin-top: -7px
+		z-index: 999
+		&-left
+			@include triangle(14px 12px, #252e31, left)
+			position: absolute
+			left: 0
+			top: 0
+		&-right
+			@include triangle(14px 12px, #252e31, right)
+			position: absolute
+			right: 0
+			top: 0
+.quick-order
+	&-wp
+		max-width: 743px
+		margin: 0 auto
+		position: relative
+	&-tov
+		width: 75% !important
+	&-name, &-art
+		margin-left: 175px !important
+	&-item
+		width: 100%
+		@extend .clearfix
+		border-top: 2px solid #dedede
+		border-bottom: 2px solid #dedede
+		margin-bottom: 10px
+		margin-top: 10px
+	&-pay
+		border-left: 1px solid #eaeaea
+		width: 23%
+		text-align: center
+/**/
+.filter
+	&-row
+		display: inline-block
+		width: 412px
+		padding-top: 28px
+	&-wp
+		padding: 0 12px
+	&__label
+		display: inline-block
+		font-family: "PTSansNarrowRegular", sans-serif
+		font-size: em(14px)
+		height: 28px
+		line-height: 28px
+		float: left
+		margin-right: 14px
+	&__select
+		max-width: 260px
+		display: inline-block
+		&-wrapper
+			max-width: 260px
+			display: inline-block
+			border-radius: 0
+			border: 1px solid #252e31
+			float: none
+	&__input
+		&::after
+			border-left: none !important

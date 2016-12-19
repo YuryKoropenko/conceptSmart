@@ -1,6 +1,7 @@
 $(document).ready(function() {
 /*Pop-up back-call*/
 	$(".phone__communication").magnificPopup();
+	$(".c-description__one-click").magnificPopup();
 /*nav toggle*/
 	$(".menu__item a").on("click", function() {
 		return false
@@ -43,4 +44,6 @@ $(document).ready(function() {
 			}, 800);
 		});
 	});
+	/**/
+	$(".c-description__tabs").lightTabs();
 });

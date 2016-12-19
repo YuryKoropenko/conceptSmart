@@ -11,6 +11,9 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 991px) {
+  .c-description {
+    padding-top: 10px;
+  }
   .basket-right {
     padding-top: 20px;
   }
@@ -144,8 +147,11 @@
     text-align: center;
     padding-top: 20px;
   }
-  .bx-wrapper {
+  .head-slider__slider {
     display: none;
+  }
+  .novelty {
+    margin-top: 20px;
   }
   .slider-head-menu {
     padding-bottom: 0;
@@ -171,6 +177,27 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
+  .quick-order-name {
+    margin-left: 104px !important;
+  }
+  .quick-order-art {
+    margin-left: 104px !important;
+  }
+  .c-description__button {
+    display: block;
+    margin: 10px 30px 0;
+    text-align: center;
+  }
+  .c-description__tabs-item {
+    width: 100%;
+    margin-left: 0;
+  }
+  .c-description__tabs-item::after {
+    display: none;
+  }
+  .checkout-n__similar-tr {
+    display: none;
+  }
   .basket-left__item {
     height: 100%;
   }
