@@ -52,7 +52,7 @@ option
 	font-family: "PTSansNarrowBold",sans-serif
 	padding-left: 12px
 	font-size: em(14px)
-/*defff*/
+/*Слайдер стили*/
 .bx-wrapper
 	position: relative
 .bx-controls
@@ -92,16 +92,17 @@ option
 	text-align: center
 .mfp-close:active
 	top: -12px
-.bx-pager
-	@extend .clearfix
-	padding-top: 16px
-	a
-		width: 100 / 3 + %
-		display: block
-		text-align: center
-		float: left
-	.active
-		background-color: #fff
+.card__wrapper
+	.bx-pager
+		@extend .clearfix
+		padding-top: 16px
+		a
+			width: 100 / 3 + %
+			display: block
+			text-align: center
+			float: left
+		.active
+			background-color: #fff
 .card-slider
 	li
 		text-align: center
@@ -149,4 +150,17 @@ option
 	width: 200px
 	margin-left: -100px
 	height: auto
-/**/
+/*Дополнительные стили*/
+.menu-txt
+	padding-bottom: 4px
+.t-page
+	margin-top: 60px
+.leaders__last
+	width: 100%
+	.leaders__wp
+		float: left
+	.leaders__wp-t
+		float: right
+.leaders-l
+	position: absolute
+	bottom: 0

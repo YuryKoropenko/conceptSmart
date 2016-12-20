@@ -8,11 +8,17 @@
 		padding-top: 20px
 		width: 100%
 		padding-left: 0
+	.leaders__wp-wp
+		bottom: 72px !important
 	/**/
 
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 991px)
+	.leaders-l
+		position: static !important
+	.leaders__wp
+		width: 30%
 	.filter__label
 		float: none
 	.filter-row
@@ -103,6 +109,31 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 767px)
+	.leaders__wrapper
+		text-align: center
+		padding-bottom: 20px
+	.leaders__wp-wp
+		position: static !important
+		width: 40% !important
+		display: inline-block
+		margin: 0 auto
+		height: 100% !important
+		&::before
+			display: none
+	.leaders__wp-img
+		width: 40%
+		display: inline-block
+	.leaders__wp
+		width: 100%
+		display: block
+		height: 100% !important
+	.leaders__last, .leaders__wp
+		float: none
+		text-align: center !important
+	.leaders__wp-t
+		width: 100%
+	.leaders_first
+		float: none
 	.filter-row
 		margin-top: 20px
 	.basket-left__pay, .basket-left__button
@@ -150,6 +181,17 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
+	.checkout-n__wrapper
+		margin-bottom: 20px
+	.leaders__wp-img
+		width: 100% !important
+	.leaders__wp-wp
+		width: 100% !important
+	.filter__description
+		text-align: center
+	.catalog-description-img
+		display: inline-block
+		float: none
 	.checkout-top
 		display: block
 	.quick-order-tov

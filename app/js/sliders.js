@@ -1,7 +1,8 @@
 $(document).ready(function() {
 	$('.slider').bxSlider({
-		captions: true,
-		ticker: false,
-		controls: false
+		controls: false,
+		pager: true,
+		auto: true,
+		speed: 400
 	});
 });

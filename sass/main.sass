@@ -1179,3 +1179,109 @@ input[type=radio]:checked + .checkout-b__radio-label:before
 			margin: 0 auto
 .f-description
 	padding: 0 12px 30px
+/**/
+.catalog
+	&-w
+		padding-top: 20px
+		padding-bottom: 10px
+	&__item
+		width: 100%
+		height: 232px
+		border: 1px solid #cdcdd1
+		text-align: center
+		display: block
+		position: relative
+		margin-bottom: 18px
+		&:hover
+			&::after
+				content: ''
+				border: 6px solid #ffc13c
+				display: block
+				position: absolute
+				top: -7px
+				left: -7px
+				right: -7px
+				bottom: -7px
+	&__img
+		display: block
+		width: 150px
+		height: 150px
+		margin: 12px auto
+	&__link
+		color: #202e31
+		font-family: "PTSansNarrowRegular", sans-serif
+		font-size: em(18px)
+		line-height: 1.25
+		display: inline-block
+		&-col
+			display: block
+			font-size: 0.778em
+	&-description
+		&-img
+			float: left
+/**/
+.leaders
+	padding: 0 12px
+	&__wrapper
+		position: relative
+		min-height: 940px
+		padding-top: 30px
+	&__title
+		font-family: "Exo2Bold", sans-serif
+		font-size: em(24px)
+		color: #202e31
+		margin-bottom: 36px
+	&__first, &__last
+		@extend .clearfix
+	&__description
+		color: #202e31
+		font-size: em(18px)
+		font-family: "PTSansNarrowRegular", sans-serif
+		line-height: 1.25
+		padding-bottom: 22px
+		&-bold
+			font-family: "PTSansNarrowBold", sans-serif
+	&__wp
+		float: right
+		+percent(300, 1000)
+		position: relative
+		height: 440px
+		&-wp
+			width: 204px
+			position: absolute
+			bottom: 53px
+			left: 50%
+			margin-left: -102px
+			padding-left: 15px
+			&::before
+				content: ''
+				position: absolute
+				left: 0
+				top: 7px
+				width: 4px
+				height: 25px
+				background-color: #eec43d
+		&-t
+			float: left
+			+percent(610, 1000)
+			padding-top: 80px
+		&-img
+			display: block
+			width: 100%
+		&-name
+			color: #252e31
+			font-size: em(24px)
+			font-family: "Exo2Regular", sans-serif
+			text-transform: uppercase
+		&-position
+			font-family: "Exo2Regular", sans-serif
+			color: #252e31
+			font-size: em(14px)
+			text-transform: uppercase
+		&-contact
+			font-family: "Exo2Regular", sans-serif
+			color: #252e31
+			font-size: em(14px)
+			&-email
+				margin-top: 8px
+				display: block
