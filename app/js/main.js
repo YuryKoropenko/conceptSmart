@@ -16,6 +16,11 @@ $(document).ready(function() {
 /*menu-toggle*/
 	$(".nav__toggle").on("click", function() {
 		$(this).parent().children(".nav").stop(true, false).fadeToggle(300);
+		$(document).click(function(event) {
+			if ($(event.target).closest(".nav").length) return;
+				$(".nav").fadeOut("slow");
+				event.stopPropagation();
+			});
 		return false
 	});
 /*select*/
@@ -46,4 +51,15 @@ $(document).ready(function() {
 	});
 	/**/
 	$(".c-description__tabs").lightTabs();
+
+	/**/
+	$('.checkout-n__similar-tr-left').on('click', function(e) {
+		$('.bx-prev').trigger('click', true);
+		return false
+	});
+
+	$('.checkout-n__similar-tr-right').on('click', function(e) {
+		$('.bx-next').trigger('click', true);
+		return false
+	});
 });

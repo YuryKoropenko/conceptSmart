@@ -16,6 +16,7 @@
 	<link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
 	<link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="libs/magnific-popup/magnific-popup.css">
+	<link rel="stylesheet" href="js">
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/media.css">
@@ -26,6 +27,7 @@
 	<script type="text/javascript" src="libs/magnific-popup/jquery.magnific-popup.min.js"></script>
 	<script type="text/javascript" src="libs/lightTabs/lightTabs.js"></script>
 	<script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
+	<script type="text/javascript" src="js/slider1.js"></script>
 	<script type="text/javascript" src="js/slider-prod.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 	<!-- End_Scripts -->
@@ -35,19 +37,7 @@
 		<div class="header-top">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-3 col-sm-6 col-md-push-9 col-xs-9">
-						<div class="header-top__phone">
-							<div class="phone">
-								<div class="phone__number">
-									8-495-453-54-54
-								</div>
-								<a href="#back-call" class="phone__communication">
-									Заказать обратный звонок
-								</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-9 col-sm-6 col-md-pull-3 col-xs-3">
+					<div class="col-md-9 col-sm-6 col-xs-3 fmn">
 						<div class="header-top__nav">
 							<a href="#" class="nav__toggle"><i class="fa fa-bars nav__toggle-icon" aria-hidden="true"></i></a>
 							<ul class="nav">
@@ -87,6 +77,18 @@
 									</a>
 								</li>
 							</ul>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-9">
+						<div class="header-top__phone">
+							<div class="phone">
+								<div class="phone__number">
+									8-495-453-54-54
+								</div>
+								<a href="#back-call" class="phone__communication">
+									Заказать обратный звонок
+								</a>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -303,9 +305,9 @@
 					</div>
 				</div>
 			</div>
-			<div class="row products-wp">
-				<div class="products">
-					<div class="col-md-3 col-sm-6">
+			<div class="row products-wp sl-w">
+				<ul class="sl">
+					<li class="sl__item">
 						<div class="products__item">
 							<img src="img/products/1.jpg" alt="" class="products__img">
 							<a href="#" class="products__title">
@@ -323,8 +325,8 @@
 								</a>
 							</div>
 						</div>
-					</div>
-					<div class="col-md-3 col-sm-6">
+					</li>
+					<li class="sl__item">
 						<div class="products__item">
 							<img src="img/products/1.jpg" alt="" class="products__img">
 							<a href="#" class="products__title">
@@ -342,8 +344,8 @@
 								</a>
 							</div>
 						</div>
-					</div>
-					<div class="col-md-3 col-sm-6">
+					</li>
+					<li class="sl__item">
 						<div class="products__item">
 							<img src="img/products/1.jpg" alt="" class="products__img">
 							<a href="#" class="products__title">
@@ -361,8 +363,8 @@
 								</a>
 							</div>
 						</div>
-					</div>
-					<div class="col-md-3 col-sm-6">
+					</li>
+					<li class="sl__item">
 						<div class="products__item">
 							<img src="img/products/1.jpg" alt="" class="products__img">
 							<a href="#" class="products__title">
@@ -380,8 +382,27 @@
 								</a>
 							</div>
 						</div>
-					</div>
-				</div>
+					</li>
+					<li class="sl__item">
+						<div class="products__item">
+							<img src="img/products/1.jpg" alt="" class="products__img">
+							<a href="#" class="products__title">
+								Горшочек с крышкой красный &laquo;Chan Wave&raquo; 300 мл
+							</a>
+							<span class="products__vendor-code">
+								Артикул: фк1104
+							</span>
+							<div class="products__bottom">
+								<div class="products__price">
+									<span class="products__price-first">1 441</span> руб.
+								</div>
+								<a href="#" class="products__button">
+									в корзину
+								</a>
+							</div>
+						</div>
+					</li>
+				</ul>
 			</div>
 		</div>
 	</div>
@@ -610,8 +631,8 @@
 			</div>
 		</form>
 	</div>
-	<div class="quick-order-wp mfp-hide" id="quick-order">
-		<form action="" id="back-call" class="back-call">
+	<div class="quick-order-wp mfp-hide">
+		<form action="" id="quick-order" class="back-call">
 			<h3 class="back-call__title">
 				Быстрый заказ
 			</h3>

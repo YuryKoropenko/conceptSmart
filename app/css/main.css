@@ -211,6 +211,23 @@ option {
   bottom: 0;
 }
 
+/**/
+.sl-w .bx-prev {
+  opacity: 0;
+}
+
+.sl-w .bx-next {
+  opacity: 0;
+}
+
+.sl-w .bx-viewport::after {
+  display: none;
+}
+
+.arrow-p {
+  float: right;
+}
+
 body {
   font-size: 16px;
   min-width: 320px;
@@ -218,6 +235,7 @@ body {
   line-height: 1.25;
   font-family: "Exo2Regular", sans-serif;
   overflow-x: hidden;
+  width: 100% !important;
 }
 
 .hidden {
@@ -454,7 +472,6 @@ body {
 .menu__item {
   background-color: #fff;
   display: inline-block;
-  height: 40px;
   position: relative;
 }
 
@@ -488,8 +505,7 @@ body {
 .menu__link {
   color: #202e31;
   display: block;
-  line-height: 40px;
-  padding: 0 12px;
+  padding: 12px 12px;
   text-transform: uppercase;
   font-family: "Exo2Bold", sans-serif;
 }
@@ -2031,4 +2047,18 @@ input[type=radio]:checked + .checkout-b__radio-label:before {
 .leaders__wp-contact-email {
   margin-top: 8px;
   display: block;
+}
+
+.oll-novelty {
+  width: 100%;
+  text-align: right;
+  padding: 0 12px;
+  padding-bottom: 30px;
+}
+
+.oll-novelty__link {
+  display: inline-block;
+  font-family: "PTSansNarrowBold", sans-serif;
+  text-decoration: underline;
+  color: #383843 !important;
 }

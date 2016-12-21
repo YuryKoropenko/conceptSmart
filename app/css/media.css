@@ -14,6 +14,30 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 991px) {
+  .c-bar {
+    padding-top: 0 !important;
+    padding-bottom: 40px;
+  }
+  .quick-order-wp {
+    width: 100%;
+  }
+  .back-call {
+    max-width: 80% !important;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .header-center__logo,
+  .header-center__search,
+  .header-center__authentication,
+  .header-center__basket {
+    padding: 1% 0 !important;
+  }
+  .phone {
+    float: right;
+  }
+  .fmn {
+    position: static !important;
+  }
   .leaders-l {
     position: static !important;
   }
@@ -66,13 +90,14 @@
     text-align: left;
   }
   .header-top__nav {
-    float: right;
+    float: left;
   }
   .nav {
     background-color: #202e31;
     position: absolute;
     z-index: 999;
-    width: 300px;
+    width: 100%;
+    left: 0;
     right: 0;
     top: 50px;
     padding-left: 0;
@@ -136,6 +161,19 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 767px) {
+  .basket-left__item-tov-art,
+  .basket-left__item-tov-name {
+    margin-left: 104px !important;
+  }
+  .products .col-md-3 {
+    width: 50%;
+    float: left;
+  }
+  .nav {
+    left: 0;
+    right: 0;
+    width: 100%;
+  }
   .leaders__wrapper {
     text-align: center;
     padding-bottom: 20px;
@@ -216,7 +254,16 @@
   }
   .menu {
     width: 100%;
-    display: none !important;
+  }
+  .menu__item {
+    width: 100%;
+  }
+  .menu__item:after {
+    display: none;
+  }
+  .menu__link {
+    width: 100% !important;
+    display: block !important;
   }
   .back-call__row-c-first {
     width: 100%;
@@ -232,6 +279,21 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
+  .basket-left__item-pay, .basket-left__item-tov {
+    width: 100%;
+    border-left: none;
+  }
+  .basket-left__item-tov-art,
+  .basket-left__item-tov-name {
+    margin-left: 90px !important;
+  }
+  .back-call {
+    max-width: 90% !important;
+  }
+  .products .col-md-3 {
+    width: 100%;
+    float: none;
+  }
   .checkout-n__wrapper {
     margin-bottom: 20px;
   }
@@ -250,12 +312,6 @@
   }
   .checkout-top {
     display: block;
-  }
-  .quick-order-name {
-    margin-left: 104px !important;
-  }
-  .quick-order-art {
-    margin-left: 104px !important;
   }
   .c-description__button {
     display: block;
@@ -302,19 +358,6 @@
     float: left;
     padding-left: 0;
   }
-  .authentication {
-    float: left;
-  }
-  .header-center__basket {
-    float: right;
-    padding-right: 10px;
-  }
-  .basket {
-    float: right;
-  }
-  .nav {
-    width: 320px;
-  }
   /**/
 }
 
@@ -341,6 +384,9 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width: 992px) {
+  .nav {
+    display: block !important;
+  }
   /**/
 }
 
