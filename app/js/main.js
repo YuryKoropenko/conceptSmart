@@ -62,4 +62,5 @@ $(document).ready(function() {
 		$('.bx-next').trigger('click', true);
 		return false
 	});
+	/**/
 });
