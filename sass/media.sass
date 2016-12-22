@@ -15,6 +15,8 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 991px)
+	.authentication__link
+		padding: 8px 0
 	.sl
 		display: none !important
 	.sl2
@@ -29,10 +31,11 @@
 		margin-top: 20px
 		margin-bottom: 20px
 	.header-center__logo,
-	.header-center__search,
+	.header-center__search
+		padding: 1% 0 !important
 	.header-center__authentication,
 	.header-center__basket
-		padding: 1% 0 !important
+		padding: 2% 0 !important
 	.phone
 		float: right
 	.fmn
@@ -132,6 +135,10 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 767px)
+	.menu
+		padding-bottom: 4px
+	.menu__item
+		margin-bottom: 2px
 	.basket-left__item-tov-art,
 	.basket-left__item-tov-name
 		margin-left: 104px !important
@@ -221,6 +228,16 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
+	.basket
+		margin-left: 32px
+	.header-center__authentication
+		width: 60%
+	.header-center__basket
+		width: 40%
+	.authentication
+		float: right
+	.basket
+	
 	.basket-left__item-pay, .basket-left__item-tov
 		width: 100%
 		border-left: none
@@ -285,6 +302,9 @@
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
+	.header-center__authentication,
+	.header-center__basket
+		padding: 3% 0 !important
 	/**/
 
 
@@ -292,6 +312,7 @@
 
 /* Custom, iPhone Retina */
 @media only screen and (min-width : 320px)
+	padding: 2% 0 !important
 	/**/
 
 
