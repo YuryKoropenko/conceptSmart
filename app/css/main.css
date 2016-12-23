@@ -232,6 +232,21 @@ option {
   display: none;
 }
 
+.header-center__wp {
+  padding-top: 10px;
+}
+
+.header-center__title {
+  color: #202e31;
+  max-width: 386px;
+  display: block;
+  margin: 0 auto;
+  font-family: "Exo2Regular", sans-serif;
+  font-size: 1.25em;
+  text-transform: uppercase;
+  line-height: 100%;
+}
+
 body {
   font-size: 16px;
   min-width: 320px;
@@ -262,7 +277,7 @@ body {
 .header-center__logo {
   width: 30.9%;
   padding-left: 9px;
-  padding-top: 30px;
+  padding-top: 10px;
   padding-bottom: 26px;
   float: left;
 }
@@ -270,21 +285,21 @@ body {
 .header-center__search {
   width: 42.1%;
   float: left;
-  padding-top: 35px;
+  padding-top: 15px;
   padding-bottom: 62px;
 }
 
 .header-center__authentication {
   width: 16.4%;
   float: left;
-  padding-top: 35px;
+  padding-top: 15px;
   padding-bottom: 62px;
 }
 
 .header-center__basket {
   width: 7.9px%;
   padding-right: 30px;
-  padding-top: 27px;
+  padding-top: 7px;
   padding-bottom: 57px;
   float: right;
 }

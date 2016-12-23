@@ -14,6 +14,10 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 991px) {
+  .header-center__wp {
+    text-align: center;
+    padding: 1% 0;
+  }
   .authentication__link {
     padding: 8px 0;
   }
@@ -420,6 +424,9 @@
 @media only screen and (min-width: 992px) {
   .nav {
     display: block !important;
+  }
+  .sl2 {
+    display: none !important;
   }
   /**/
 }
