@@ -171,6 +171,14 @@
   .b-phone__number {
     text-align: right;
   }
+  /*new style*/
+  .oplata__cat {
+    height: auto;
+    padding-bottom: 22px;
+  }
+  .oplata {
+    padding-bottom: 36px;
+  }
   /**/
 }
 
@@ -390,6 +398,23 @@
   .header-center__authentication {
     float: left;
     padding-left: 0;
+  }
+  /*new style*/
+  .oplata__cat {
+    padding-left: 0;
+  }
+  .oplata__cat-icon {
+    display: none;
+  }
+  .oplata__item {
+    padding-left: 0;
+  }
+  .oplata__item-icon {
+    display: none;
+  }
+  .oplata {
+    padding-top: 0;
+    padding-bottom: 0;
   }
   /**/
 }

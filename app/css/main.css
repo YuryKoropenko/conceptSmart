@@ -2081,3 +2081,96 @@ input[type=radio]:checked + .checkout-b__radio-label:before {
   text-decoration: underline;
   color: #383843 !important;
 }
+
+/*new style*/
+.oplata {
+  padding-top: 36px;
+  padding-bottom: 205px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.oplata__cat {
+  padding-left: 134px;
+  position: relative;
+  height: 165px;
+}
+
+.oplata__cat-icon {
+  width: 134px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  top: 12px;
+  background-repeat: no-repeat;
+  background-position: center top;
+  display: block;
+}
+
+.oplata__cat-title {
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  color: #202e31;
+  text-transform: uppercase;
+  font-family: "Exo2Bold", sans-serif;
+  display: block;
+  border-bottom: 1px solid #202e31;
+  line-height: 32px;
+}
+
+.oplata__cat-description {
+  font-size: 14px;
+  line-height: 22px;
+  color: #202e31;
+  display: block;
+  letter-spacing: -0.2px;
+}
+
+.oplata__item {
+  padding-left: 134px;
+  position: relative;
+  margin-bottom: 22px;
+}
+
+.oplata__item-icon {
+  width: 134px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  top: 12px;
+  background-repeat: no-repeat;
+  background-position: center top;
+  display: block;
+}
+
+.oplata__item-title {
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: 0.5px;
+  color: #202e31;
+}
+
+.oplata__item-description {
+  font-size: 14px;
+  line-height: 22px;
+  color: #202e31;
+  display: block;
+  letter-spacing: -0.2px;
+}
+
+.oplata__item-description a {
+  font-size: 14px;
+  line-height: 22px;
+  color: #202e31;
+  text-decoration: underline;
+  display: block;
+  letter-spacing: -0.2px;
+  display: inline-block;
+}
+
+.oplata__item-description a:hover {
+  color: #202e31;
+  text-decoration: none;
+}
