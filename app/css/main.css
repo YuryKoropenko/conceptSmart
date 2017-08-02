@@ -2174,3 +2174,84 @@ input[type=radio]:checked + .checkout-b__radio-label:before {
   color: #202e31;
   text-decoration: none;
 }
+
+.dostavka {
+  padding-bottom: 90px;
+  padding-top: 11px;
+  padding-right: 12px;
+  padding-left: 12px;
+}
+
+.dostavka__item {
+  position: relative;
+  padding: 15px 0 25px 134px;
+  border-bottom: 1px solid #202e31;
+}
+
+.dostavka__item:last-child {
+  border-bottom: none;
+}
+
+.dostavka__item-icon {
+  width: 134px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  top: 26px;
+  background-repeat: no-repeat;
+  background-position: center top;
+  display: block;
+}
+
+.dostavka__item-title {
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  color: #202e31;
+  text-transform: uppercase;
+  font-family: "Exo2Bold", sans-serif;
+  display: block;
+  line-height: 32px;
+}
+
+.dostavka__item-description {
+  font-size: 14px;
+  line-height: 22px;
+  color: #202e31;
+  display: block;
+  letter-spacing: -0.2px;
+  margin-top: 8px;
+}
+
+.dostavka__item-list {
+  margin-top: 8px;
+}
+
+.dostavka__item-list-item {
+  display: block;
+  padding-left: 65px;
+  position: relative;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: -0.2px;
+  color: #202e31;
+}
+
+.dostavka__item-list-item div {
+  width: 35px;
+  height: 12px;
+  border: 1px solid #e0e0e0;
+  display: block;
+  position: absolute;
+  left: 18px;
+  top: 6px;
+}
+
+.dostavka__map {
+  padding: 25px 0;
+}
+
+.dostavka__map img {
+  width: 100%;
+  height: auto;
+}

@@ -179,6 +179,12 @@
   .oplata {
     padding-bottom: 36px;
   }
+  .dostavka__map {
+    padding-bottom: 0;
+  }
+  .dostavka {
+    padding-bottom: 0;
+  }
   /**/
 }
 
@@ -415,6 +421,15 @@
   .oplata {
     padding-top: 0;
     padding-bottom: 0;
+  }
+  .dostavka__map {
+    padding-top: 0;
+  }
+  .dostavka__item {
+    padding-left: 0;
+  }
+  .dostavka__item-icon {
+    display: none;
   }
   /**/
 }
