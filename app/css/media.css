@@ -185,6 +185,13 @@
   .dostavka {
     padding-bottom: 0;
   }
+  .contact__map,
+  .contact__big-map {
+    margin-left: 0;
+  }
+  .contact__item {
+    min-height: auto;
+  }
   /**/
 }
 
@@ -430,6 +437,26 @@
   }
   .dostavka__item-icon {
     display: none;
+  }
+  .contact__item {
+    padding-left: 0;
+  }
+  .contact__item-icon {
+    display: none;
+  }
+  .contact {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .contact__big-map {
+    padding-bottom: 8px;
+  }
+  .contact__item {
+    padding-top: 0;
+  }
+  .contact__map {
+    border: none;
+    padding: 0;
   }
   /**/
 }
