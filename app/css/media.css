@@ -458,6 +458,13 @@
     border: none;
     padding: 0;
   }
+  .equipment {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .equipment__item {
+    padding-top: 0;
+  }
   /**/
 }
 
