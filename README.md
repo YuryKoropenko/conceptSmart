@@ -1,1 +1,13 @@
 # conceptSmart
+- [Корзина] (https://yurykoropenko.github.io/conceptSmart/app/basket.html)
+- [Карточка товара] (https://yurykoropenko.github.io/conceptSmart/app/card.html)
+- [Каталог] (https://yurykoropenko.github.io/conceptSmart/app/catalog.html)
+- [Каталог 2го уровня] (https://yurykoropenko.github.io/conceptSmart/app/catalog_lv2.html)
+- [Поиск] (https://yurykoropenko.github.io/conceptSmart/app/catalog_search.html)
+- [Контакты] (https://yurykoropenko.github.io/conceptSmart/app/contact.html)
+- [Главная страница] (https://yurykoropenko.github.io/conceptSmart/app/design-2.html)
+- [Доставка] (https://yurykoropenko.github.io/conceptSmart/app/dostavka.html)
+- [Оплата 1] (https://yurykoropenko.github.io/conceptSmart/app/equipment.html)
+- [Оплата 2] (https://yurykoropenko.github.io/conceptSmart/app/oplata.html)
+- [Оформление заказа] (https://yurykoropenko.github.io/conceptSmart/app/shipping.html)
+- [Текстовая страница] (https://yurykoropenko.github.io/conceptSmart/app/txt_page.html)
